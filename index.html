@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet"href="style.css">
+<title>Homepage</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Campus Events</h1>
+            <nav>
+                <button id="filter-toggle">Filters</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <aside id="filters" class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="">All Categories</option>
+                    <option value="Academic">Academic</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Clubs">Clubs</option>
+                    <option value="Social">Social</option>
+                    <option value="Career">Career</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="date">Date:</label>
+                <select id="date">
+                    <option value="">All Dates</option>
+                    <option value="today">Today</option>
+                    <option value="this-week">This Week</option>
+                    <option value="this-month">This Month</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="club">Club/Organization:</label>
+                <select id="club">
+                    <option value="">All Clubs</option>
+                    <option value="Student Council">Student Council</option>
+                    <option value="Sports Club">Sports Club</option>
+                    <option value="Art Society">Art Society</option>
+                    <option value="Tech Club">Tech Club</option>
+                </select>
+            </div>
+        </aside>
+
+        <section class="events-section">
+            <div class="container">
+                <div id="events-grid" class="events-grid">
+                    <div class="event-card" data-category="Social" data-date="2026-01-20" data-club="Student Council" data-time="12:00 PM - 4:00 PM" data-location="Campus Quad" data-description="Join us for a fun BBQ to kick off the new semester! Free food, games, and meet new friends.">
+                        <div class="event-image"><img src="welcomback.jpeg" height="200px"></div>
+                        <div class="event-content">
+                            <h3 class="event-title">Welcome Back BBQ</h3>
+                            <p class="event-date">Monday, January 20, 2026 at 12:00 PM - 4:00 PM</p>
+                            <p class="event-location">Campus Quad</p>
+                            <p class="event-category">Social - Student Council</p>
+                            <p class="event-description">Join us for a fun BBQ to kick off the new semester! Free food, games, and meet new friends.</p>
+                        </div>
+                    </div>
+                    <div class="event-card" data-category="Sports" data-date="2026-01-22" data-club="Sports Club" data-time="2:00 PM - 6:00 PM" data-location="Sports Center" data-description="Intramural basketball tournament. Teams welcome! Prizes for winners.">
+                        <div class="event-image"><img src="basketball.jpeg" height="200px"></div>
+                        <div class="event-content">
+                            <h3 class="event-title">Basketball Tournament</h3>
+                            <p class="event-date">Wednesday, January 22, 2026 at 2:00 PM - 6:00 PM</p>
+                            <p class="event-location">Sports Center</p>
+                            <p class="event-category">Sports - Sports Club</p>
+                            <p class="event-description">Intramural basketball tournament. Teams welcome! Prizes for winners.</p>
+                        </div>
+                    </div>
+                    <div class="event-card" data-category="Clubs" data-date="2026-01-25" data-club="Art Society" data-time="5:00 PM - 8:00 PM" data-location="Art Gallery" data-description="Opening night of our annual student art exhibition. Featuring works from various mediums.">
+                        <div class="event-image"><img src="art.jpeg" height="200px"></div>
+                        <div class="event-content">
+                            <h3 class="event-title">Art Exhibition Opening</h3>
+                            <p class="event-date">Saturday, January 25, 2026 at 5:00 PM - 8:00 PM</p>
+                            <p class="event-location">Art Gallery</p>
+                            <p class="event-category">Clubs - Art Society</p>
+                            <p class="event-description">Opening night of our annual student art exhibition. Featuring works from various mediums.</p>
+                        </div>
+                    </div>
+                    <div class="event-card" data-category="Career" data-date="2026-01-28" data-club="Student Council" data-time="10:00 AM - 3:00 PM" data-location="Student Center" data-description="Meet with top companies and learn about internship and job opportunities.">
+                        <div class="event-image"><img src="careerfair.jpeg" height="200px"></div>
+                        <div class="event-content">
+                            <h3 class="event-title">Career Fair 2026</h3>
+                            <p class="event-date">Tuesday, January 28, 2026 at 10:00 AM - 3:00 PM</p>
+                            <p class="event-location">Student Center</p>
+                            <p class="event-category">Career - Student Council</p>
+                            <p class="event-description">Meet with top companies and learn about internship and job opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="event-card" data-category="Academic" data-date="2026-01-30" data-club="Tech Club" data-time="6:00 PM - 8:00 PM" data-location="Computer Lab" data-description="Learn the basics of web development. No experience required!">
+                        <div class="event-image"><img src="codingworkshop.jpeg" height="200px"></div>
+                        <div class="event-content">
+                            <h3 class="event-title">Coding Workshop</h3>
+                            <p class="event-date">Thursday, January 30, 2026 at 6:00 PM - 8:00 PM</p>
+                            <p class="event-location">Computer Lab</p>
+                            <p class="event-category">Academic - Tech Club</p>
+                            <p class="event-description">Learn the basics of web development. No experience required!</p>
+                        </div>
+                    </div>
+                    <div class="event-card" data-category="Social" data-date="2026-02-01" data-club="Student Council" data-time="8:00 PM - 10:00 PM" data-location="Auditorium" data-description="Free movie screening followed by discussion. Popcorn provided!">
+                        <div class="event-image"><img src="movienight.jpeg" height="200px"></div>
+                        <div class="event-content">
+                            <h3 class="event-title">Movie Night</h3>
+                            <p class="event-date">Saturday, February 1, 2026 at 8:00 PM - 10:00 PM</p>
+                            <p class="event-location">Auditorium</p>
+                            <p class="event-category">Social - Student Council</p>
+                            <p class="event-description">Free movie screening followed by discussion. Popcorn provided!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Event Detail Modal 
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="event-details">-->
+                <!-- Event details will be shown here 
+            </div>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
